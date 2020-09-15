@@ -1,5 +1,5 @@
 {
-  "name": "openmrs-dhis2",
+  "name": "openmrsdhis2",
   "version": "1.0.0",
   "description": "data exchange between dhis2 and openmrs. Mainly aggregate reports",
   "main": "index.js",
