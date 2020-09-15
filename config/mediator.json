@@ -1,0 +1,62 @@
+{
+    "urn": "urn",
+    "version": "0.0.20",
+    "name": "MFR",
+    "description": "Fetch facility records from MFR",
+    "defaultChannelConfig": [
+      {
+        "name": "MFR",
+        "urlPattern": "/fetch",
+        "alerts": [],
+        "txRerunAcl": [],
+        "txViewFullAcl": [],
+        "txViewAcl": [],
+        "properties": [],
+        "matchContentTypes": [],
+        "routes": [
+          {
+            "name": "fetch Route",
+            "host": "localhost",
+            "port": "3000",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": [
+          "admin"
+        ],
+        "type": "http"
+      }
+    ],
+    "endpoints": [
+      {
+        "name": "fetch Route",
+        "host": "localhost",
+        "path": "/",
+        "port": "3001",
+        "primary": true,
+        "type": "http"
+      }
+    ],
+    "configDefs": [
+      {
+        "param": "OpenMRSURL",
+        "displayName": "OpenMRS URL",
+        "description": "The URL of the OpenMRS service",
+        "type": "string",
+        "template": []
+      },
+      {
+        "param": "DHIS2URL",
+        "displayName": "DHIS2 Upstream URL",
+        "description": "The URL of the DHIS2 service upstream of the mediator",
+        "type": "string",
+        "template": []
+      }
+
+    ],
+    "config": {
+      "OpenMRSURL": "https://demo.openmrs.org/openmrs/ws/rest/v1",
+      "DHIS2URL": "http://18.222.104.192:8080/"
+    }
+  }
