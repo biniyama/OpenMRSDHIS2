@@ -52,11 +52,27 @@
         "description": "The URL of the DHIS2 service upstream of the mediator",
         "type": "string",
         "template": []
+      },
+      {
+        "param": "SampleLocation",
+        "displayName": "Location Display Name",
+        "description": "The display name for sample location",
+        "type": "string",
+        "template": []
+      },
+      {
+        "param": "StartDate",
+        "displayName": "From start date",
+        "description": "The starting date time",
+        "type": "string",
+        "template": []
       }
 
     ],
     "config": {
-      "OpenMRSURL": "https://demo.openmrs.org/openmrs/ws/rest/v1",
+      "SampleLocation": "Tirunesh Beijing General hospital",
+      "StartDate": "2020-09-25T05:00:00.000Z",
+      "OpenMRSURL": "https://34.122.219.240/openmrs/ws/rest/v1",
       "DHIS2URL": "http://18.222.104.192:8080/"
     }
   }
